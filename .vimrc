@@ -9,6 +9,11 @@ call plug#begin('~/.vim/plugged')
 
 " Make sure you use single quotes
 Plug 'vim-airline/vim-airline'
+Plug 'scrooloose/nerdtree'
 
 " Initialize plugin system
 call plug#end()
+
+" HotKey for NerdTree
+let mapleader = ","
+nmap <leader>ne :NERDTreeToggle<cr>
