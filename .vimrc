@@ -12,6 +12,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'scrooloose/nerdtree'
 Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
+Plug 'elzr/vim-json'
 
 " Initialize plugin system
 call plug#end()
@@ -19,3 +20,8 @@ call plug#end()
 " HotKey for NerdTree
 let mapleader = ","
 nmap <leader>ne :NERDTreeToggle<cr>
+
+:set shiftwidth=2
+:set autoindent
+:set smartindent
+:set hlsearch
