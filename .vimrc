@@ -25,3 +25,6 @@ nmap <leader>ne :NERDTreeToggle<cr>
 :set autoindent
 :set smartindent
 :set hlsearch
+
+let g:airline#extensions#tabline#enabled = 1
+
