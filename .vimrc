@@ -13,6 +13,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'elzr/vim-json'
+Plug 'dyng/ctrlsf.vim'
 
 " Initialize plugin system
 call plug#end()
@@ -20,6 +21,10 @@ call plug#end()
 " HotKey for NerdTree
 let mapleader = ","
 nmap <leader>ne :NERDTreeToggle<cr>
+nmap <leader>f :Files<cr>
+nmap <leader>a :CtrlSF -R ""<Left>
+nmap <leader>c :CtrlSFFocus<CR>
+nmap <leader>C :CtrlSFToggle<CR>
 
 :set shiftwidth=2
 :set autoindent
@@ -27,4 +32,6 @@ nmap <leader>ne :NERDTreeToggle<cr>
 :set hlsearch
 
 let g:airline#extensions#tabline#enabled = 1
+let g:ctrlsf_default_view_mode = 'compact'
+
 
